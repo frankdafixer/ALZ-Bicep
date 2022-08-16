@@ -3,46 +3,46 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "parLocation": {
-        "value": "westeurope"
+        "value": "eastus2"
       },
       "parTopLevelManagementGroupPrefix": {
-        "value": "alz"
+        "value": "mhs"
       },
       "parPeeredVnetSubscriptionId": {
-        "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        "value": "ac0cac16-64f5-40bb-9d17-c0c92633d8d2"
       },
       "parPeeredVnetSubscriptionMgPlacement": {
-        "value": "alz-platform-connectivity"
+        "value": "mhs-landingzones-corp"
       },
       "parDdosProtectionPlanId": {
         "value": ""
       },
       "parSpokeNetworkName": {
-        "value": "vnet-spoke"
+        "value": "internal-vnet-spoke"
       },
       "parSpokeNetworkAddressPrefix": {
-        "value": "10.202.0.0/24"
+        "value": "10.101.0.0/24"
       },
       "parDnsServerIps": {
         "value": []
       },
       "parNextHopIpAddress": {
-        "value": "10.20.255.4"
+        "value": ""
       },
       "parDisableBgpRoutePropagation": {
         "value": false
       },      
       "parSpoketoHubRouteTableName": {
-        "value": "rtb-spoke-to-hub"
+        "value": "rtb-intenral-to-hub"
       },
       "parHubVirtualNetworkId": {
-        "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/alz-westeurope-hub-networking/providers/Microsoft.Network/virtualNetworks/alz-hub-westeurope"
+        "value": "/subscriptions/4bb98c4e-07ce-43f4-9bdc-1db578ebb6b5/resourceGroups/Hub_Networking_MHS/providers/Microsoft.Network/virtualNetworks/mhs-hub-eastus2"
       },
       "parAllowSpokeForwardedTraffic": {
         "value": false
       },
       "parAllowHubVPNGatewayTransit": {
-        "value": true
+        "value": false
       },
       "parTags": {
         "value": {
