@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parRoleAssignmentNameGuid": {
-      "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+      "value": "a0811a9b-b920-499f-bacf-1909b388929b"
     },
     "parRoleDefinitionId": {
-      "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+      "value": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
     },
     "parAssigneePrincipalType": {
       "value": "Group"
     },
     "parAssigneeObjectId": {
-      "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+      "value": "a0811a9b-b920-499f-bacf-1909b388929b"
     },
     "parTelemetryOptOut": {
       "value": false
