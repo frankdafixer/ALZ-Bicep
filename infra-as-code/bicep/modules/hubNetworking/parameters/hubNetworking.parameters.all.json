@@ -3,32 +3,19 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLocation": {
-      "value": "eastus"
+      "value": "eastus2"
     },
     "parCompanyPrefix": {
-      "value": "alz"
+      "value": "mhs"
     },
     "parHubNetworkName": {
-      "value": "alz-hub-eastus"
+      "value": "mhs-hub-eastus2"
     },
     "parHubNetworkAddressPrefix": {
       "value": "10.20.0.0/16"
     },
     "parSubnets": {
-      "value": [
-        {
-          "name": "AzureBastionSubnet",
-          "ipAddressRange": "10.20.0.0/24"
-        },
-        {
-          "name": "GatewaySubnet",
-          "ipAddressRange": "10.20.254.0/24"
-        },
-        {
-          "name": "AzureFirewallSubnet",
-          "ipAddressRange": "10.20.255.0/24"
-        }
-      ]
+      "value": []
     },
     "parDnsServerIps": {
       "value": []
@@ -49,13 +36,13 @@
       "value": "nsg-AzureBastionSubnet"
     },
     "parDdosEnabled": {
-      "value": true
+      "value": false
     },
     "parDdosPlanName": {
       "value": "alz-ddos-plan"
     },
     "parAzFirewallEnabled": {
-      "value": true
+      "value": false
     },
     "parAzFirewallName": {
       "value": "alz-azfw-eastus"
@@ -73,7 +60,7 @@
       "value": true
     },
     "parHubRouteTableName": {
-      "value": "alz-hub-routetable"
+      "value": "mhs-hub-routetable"
     },
     "parDisableBgpRoutePropagation": {
       "value": false
@@ -99,14 +86,14 @@
         "privatelink.cassandra.cosmos.azure.com",
         "privatelink.gremlin.cosmos.azure.com",
         "privatelink.table.cosmos.azure.com",
-        "privatelink.xxxxxx.batch.azure.com", // Replace xxxxxx with target region (i.e. eastus)
+        "privatelink.eastus2.batch.azure.com", // Replace xxxxxx with target region (i.e. eastus)
         "privatelink.postgres.database.azure.com",
         "privatelink.mysql.database.azure.com",
         "privatelink.mariadb.database.azure.com",
         "privatelink.vaultcore.azure.net",
         "privatelink.managedhsm.azure.net",
-        "privatelink.xxxxxx.azmk8s.io", // Replace xxxxxx with target region (i.e. eastus)
-        "privatelink.xxxxxx.backup.windowsazure.com", // Replace xxxxxx with target region geo code (i.e. for eastus, the geo code is eus)
+        "privatelink.eastus2.azmk8s.io", // Replace xxxxxx with target region (i.e. eastus)
+        "privatelink.eus.backup.windowsazure.com", // Replace xxxxxx with target region geo code (i.e. for eastus, the geo code is eus)
         "privatelink.siterecovery.windowsazure.com",
         "privatelink.servicebus.windows.net",
         "privatelink.azure-devices.net",
@@ -138,44 +125,10 @@
       ]
     },
     "parVpnGatewayConfig": {
-      "value": {
-        "name": "alz-Vpn-Gateway",
-        "gatewayType": "Vpn",
-        "sku": "VpnGw1",
-        "vpnType": "RouteBased",
-        "generation": "Generation1",
-        "enableBgp": false,
-        "activeActive": false,
-        "enableBgpRouteTranslationForNat": false,
-        "enableDnsForwarding": false,
-        "asn": "65515",
-        "bgpPeeringAddress": "",
-        "bgpsettings": {
-          "asn": "65515",
-          "bgpPeeringAddress": "",
-          "peerWeight": "5"
-        }
-      }
+      "value": {}
     },
     "parExpressRouteGatewayConfig": {
-      "value": {
-        "name": "alz-ExpressRoute-Gateway",
-        "gatewayType": "ExpressRoute",
-        "sku": "ErGw1AZ",
-        "vpnType": "RouteBased",
-        "generation": "None",
-        "enableBgp": false,
-        "activeActive": false,
-        "enableBgpRouteTranslationForNat": false,
-        "enableDnsForwarding": false,
-        "asn": "65515",
-        "bgpPeeringAddress": "",
-        "bgpsettings": {
-          "asn": "65515",
-          "bgpPeeringAddress": "",
-          "peerWeight": "5"
-        }
-      }
+      "value": {}
     },
     "parTags": {
       "value": {
