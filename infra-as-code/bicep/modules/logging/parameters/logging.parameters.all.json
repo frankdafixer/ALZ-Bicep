@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLogAnalyticsWorkspaceName": {
-      "value": "alz-log-analytics"
+      "value": "mhs-log-analytics"
     },
     "parLogAnalyticsWorkspaceLocation": {
       "value": "eastus"
@@ -21,7 +21,6 @@
         "AzureActivity",
         "ChangeTracking",
         "Security",
-        "SecurityInsights",
         "ServiceMap",
         "SQLAdvancedThreatProtection",
         "SQLVulnerabilityAssessment",
@@ -31,14 +30,15 @@
       ]
     },
     "parAutomationAccountName": {
-      "value": "alz-automation-account"
+      "value": "mhs-automation-account"
     },
     "parAutomationAccountLocation": {
       "value": "eastus2"
     },
     "parTags": {
       "value": {
-        "Environment": "POC"
+        "Department": "Cloud Governance Committee",
+        "Cost Center": "0001"
       }
     },
     "parTelemetryOptOut": {
