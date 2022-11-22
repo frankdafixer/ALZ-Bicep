@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parTopLevelManagementGroupPrefix": {
-      "value": "mhs"
+      "value": "mhs-test"
     },
     "parTopLevelManagementGroupDisplayName": {
-      "value": "mhs"
+      "value": "Monte Test Landing Zone"
     },
     "parTopLevelManagementGroupParentId": {
       "value": ""
@@ -18,7 +18,18 @@
       "value": false
     },
     "parLandingZoneMgChildren": {
-      "value": {}
+      "value": {
+		  
+		  "external": {
+          "displayName": "External Facing"
+        },
+        "Prodcution": {
+          "displayName": "Internal Prodcution"
+		},
+		 "Test": {
+          "displayName": "Internal Test"
+        }
+	  }
     },
     "parTelemetryOptOut": {
       "value": false

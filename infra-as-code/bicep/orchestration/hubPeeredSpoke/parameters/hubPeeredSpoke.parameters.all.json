@@ -6,13 +6,13 @@
         "value": "eastus2"
       },
       "parTopLevelManagementGroupPrefix": {
-        "value": "mhs"
+        "value": "mhs-test"
       },
       "parPeeredVnetSubscriptionId": {
-        "value": "ac0cac16-64f5-40bb-9d17-c0c92633d8d2"
+        "value": "fde890a0-982e-4d6f-a09f-9d1b56414d46"
       },
       "parPeeredVnetSubscriptionMgPlacement": {
-        "value": "mhs-landingzones-corp"
+        "value": "mhs-landingzones-test"
       },
       "parDdosProtectionPlanId": {
         "value": ""
